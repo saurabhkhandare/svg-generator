@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Typing SVG Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Typing SVG Generator</h1>
+
+      <div>
+        <label for="lines">Lines (separate with <code>;</code>):</label>
+        <textarea id="lines" rows="3">Hello+World;Typing+SVG</textarea>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="size">Font size (px):</label>
+          <input id="size" type="number" min="10" max="100" value="20" />
+        </div>
+        <div>
+          <label for="color">Color (hex):</label>
+          <input
+            id="color"
+            type="text"
+            maxlength="6"
+            pattern="[0-9a-fA-F]{6}"
+            value="36BCF7"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label for="width">Width:</label>
+          <input id="width" type="number" min="100" max="1000" value="400" />
+        </div>
+        <div>
+          <label for="height">Height:</label>
+          <input id="height" type="number" min="20" max="500" value="50" />
+        </div>
+      </div>
+
+      <button onclick="render()">Generate SVG</button>
+      <div class="copy-row">
+        <pre id="output"></pre>
+        <button class="copy-btn" id="copyBtn" onclick="copyCode()">Copy</button>
+      </div>
+      <div id="preview"></div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
