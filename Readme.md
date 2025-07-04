@@ -17,7 +17,7 @@ Clean & Attractive UI: Minimal, modern, and user-friendly.
 
 🚀 Usage
 Clone or Download this repository.
-git clone 
+git clone https://github.com/saurabhkhandare/svg-generator.git
 
 Open the index.html file in your browser.
 
@@ -35,6 +35,7 @@ Click "Copy" to copy the <img> code for your README or website.
 
 
 🖼️ Example
+
 xml
 <img src="https://readme-typing-svg.demolab.com?lines=Hello+World;Typing+SVG&size=20&color=36BCF7&width=400&height=50" alt="typing svg">
 
